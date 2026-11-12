@@ -1,0 +1,36 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #dfebe8; background: #101a1d; font-synthesis: none; }
+body { margin: 0; }
+main { max-width: 960px; margin: 64px auto; padding: 0 24px; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 12px 0; }
+h2 { font-size: 1.25rem; }
+p { line-height: 1.6; }
+.eyebrow { color: #64dfb4; letter-spacing: .16em; font-size: .75rem; }
+section { background: #19272b; border: 1px solid #304349; border-radius: 14px; padding: 24px; margin-top: 24px; }
+button { border: 0; border-radius: 8px; padding: 12px 18px; background: #64dfb4; color: #10221c; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+button:focus-visible, select:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.interface-picker { margin-top: 24px; }
+.interface-picker label { display: block; margin-bottom: 8px; font-weight: 600; }
+.interface-picker select { width: 100%; min-width: 0; padding: 12px; border: 1px solid #68847c; border-radius: 8px; background: #101a1d; color: #dfebe8; font: inherit; }
+.interface-picker p { overflow-wrap: anywhere; }
+.muted { color: #a5bcb6; }
+li { padding: 8px 0; overflow-wrap: anywhere; }
+form label { display: block; margin-bottom: 8px; }
+form input { box-sizing: border-box; width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #68847c; border-radius: 8px; background: #101a1d; color: #dfebe8; font: inherit; }
+.candidate { margin: 20px 0; padding: 16px; border: 1px solid #68847c; border-radius: 8px; overflow-wrap: anywhere; }
+.flow-table { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #304349; overflow-wrap: anywhere; }
+summary { cursor: pointer; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.capture-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.call-status { margin-top: 24px; padding: 20px; border-radius: 10px; background: #101a1d; border-left: 4px solid #68847c; }
+.call-status h3 { font-size: 1.6rem; margin: 0; }
+.call-status-connected { border-color: #64dfb4; }
+.call-status-ringing { border-color: #f3cb71; }
+.report-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 24px; }
+.report-fields > div { padding: 10px 0; border-bottom: 1px solid #304349; }
+.report-fields dt { font-size: .85rem; color: #a5bcb6; margin-bottom: 4px; }
+.report-fields dd { margin: 0; overflow-wrap: anywhere; }
+.location-map { width: 100%; height: 320px; border: 1px solid #68847c; border-radius: 8px; }
+a { color: #64dfb4; }
