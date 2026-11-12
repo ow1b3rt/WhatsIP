@@ -1,0 +1,25 @@
+[package]
+name = "monitor-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = []
+live-capture = ["dep:pcap"]
+
+[dependencies]
+serde.workspace = true
+pcap = { workspace = true, optional = true }
+
+[[example]]
+name = "analyze"
+required-features = ["live-capture"]
+
+[[example]]
+name = "live_smoke"
+required-features = ["live-capture"]
+
+[[example]]
+name = "replay_status"
+required-features = ["live-capture"]
