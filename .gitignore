@@ -1,0 +1,15 @@
+node_modules/
+dist/
+target/
+.env
+.env.*
+!.env.example
+*.pcap
+*.pcapng
+data/captures/*
+!data/captures/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+.DS_Store
+Thumbs.db
+docs/

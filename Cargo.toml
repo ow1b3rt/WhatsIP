@@ -1,0 +1,13 @@
+[workspace]
+members = ["crates/monitor-core", "src-tauri"]
+default-members = ["crates/monitor-core"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+pcap = "2.5"
